@@ -4,5 +4,9 @@ struct strNode{
 public:
 	long fileNum;
 	int location;
-	strNode *next;
+	strNode(long fileName, int location) :
+		fileNum(fileName),
+		location(location) {
+
+	}
 };
