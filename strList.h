@@ -11,6 +11,7 @@ private:
 public:
 	void insertList(long fileNum, int location);
 	void outputList();
+	vector<strNode> getHead();
 };
 
 void strList::insertList(long fileNum, int location) {
@@ -25,4 +26,8 @@ void strList::outputList() {
 		cout << head[i].fileNum << "     " << head[i].location << endl;
 	}
 	
+}
+
+vector<strNode> strList::getHead() {
+	return head;
 }
